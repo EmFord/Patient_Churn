@@ -20,7 +20,7 @@ There was a lot a could do with the data given to me.
 3- 'Child & Adolescent Psychiatry'
 0- All the rest
 
-![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.52.59%20PM.png)
+![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.53.13%20PM.png)
 
 #### 2. CPT codes grouped into 5 categories
 section-1 - Phone type
