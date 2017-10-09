@@ -33,14 +33,14 @@ section-0 - All the rest
 1 - For above 30 patients
 2 - For below 30 patients
 
-![](Screen Shot 2017-10-09 at 3.53.25 PM.png)
+![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.53.25%20PM.png)
 
 #### 4. Type of thrapy sectioned into three groups
  0 - in person appt
  1 - TelePsyche appt
  3 - Mixed
 
- ![](Screen Shot 2017-10-09 at 3.52.59 PM.png)
+ ![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.52.59%20PM.png)
 
 #### 5. Average frequency of visits
 -took the total sum of days between each visit and then took the mean of those sums
@@ -65,7 +65,7 @@ The features that had significance and became my final features to model on were
 7. max_specialty-3
 8. age_categories
 
-![](Screen Shot 2017-10-09 at 3.53.53 PM.png)
+![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.53.53%20PM.png)
 
 ## Models
 
@@ -73,13 +73,13 @@ I used a various number of classifying models including logistic regression, dec
 
 The model that had the highest area under the curve and accuracy was gradient boosting.  
 
-![](Screen Shot 2017-10-09 at 3.54.13 PM.png)
+![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.54.13%20PM.png)
 
 I then preformed a grid search and found feature importances. The parameters used were:
 
 best parameters: {'learning_rate': 0.1, 'min_samples_leaf': 1, 'n_estimators': 150, 'random_state': 1, 'max_features': 'sqrt', 'max_depth': 6}
 
-![](Screen Shot 2017-10-09 at 3.54.23 PM.png)
+![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.54.23%20PM.png)
 
 ## Conclusions
 The features that were most likely to predict the churn of a patient were:
