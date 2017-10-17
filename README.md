@@ -1,4 +1,4 @@
-# Patient_Churn
+# Predicting Patient Churn in Teletherapy
 2017 Galvanize Capstone Project
 
 ## Motivation
@@ -12,9 +12,9 @@ The data used in this project was from a mental health office where their busine
 I received the data in three csv forms. A patient appointment csv, and a two patient billing csv, one with duplicates and one without duplicates. When comparing the two billing csv I found that the csv with duplicates had more patient entries and used that csv. I imported the csv files with pandas and turned them into dataframes.
 
 ## Features
-There was a lot a could do with the data given to me.
+There were about 20 features and 80,000 rows of data.
 
-#### 1. Most common Specialty types labled 1, 2, 3, 0 then converted to dummy variables
+#### 1. Most common Specialty types labeled 1, 2, 3, 0 then converted to dummy variables
 1- 'Psych/Mental Health'
 2- 'Medical'
 3- 'Child & Adolescent Psychiatry'
@@ -35,21 +35,21 @@ section-0 - All the rest
 
 ![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.53.25%20PM.png)
 
-#### 4. Type of thrapy sectioned into three groups
- 0 - in person appt
+#### 4. Type of therapy sectioned into three groups
+ 0 - In person appt
  1 - TelePsyche appt
  3 - Mixed
 
  ![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.52.59%20PM.png)
 
 #### 5. Average frequency of visits
--took the total sum of days between each visit and then took the mean of those sums
+-Took the total sum of days between each visit and then took the mean of those sums
 
 #### 6. Total days as patient
--total days from the first appointment to the last appointment
+-Total days from the first appointment to the last appointment
 
 #### 7. Cancels and Reschedules
-  -total count of cancellations and reschedules the patient had
+  -Total count of cancellations and reschedules the patient had
 
 #### 8. Gender
 0 - Male
@@ -71,7 +71,7 @@ The features that had significance and became my final features to model on were
 
 I used a various number of classifying models including logistic regression, decision tree, random forest, adaptive boosting, and gradient boosting.
 
-The model that had the highest area under the curve and accuracy was gradient boosting.  
+The model that had the highest area under the curve (or the highest rate of predicting true positives to  true negatives) was gradient boosting.  
 
 ![ScreenShot](https://github.com/EmFord/Patient_Churn/blob/master/Screen%20Shot%202017-10-09%20at%203.54.13%20PM.png)
 
@@ -109,6 +109,6 @@ max_specialty-1 is patients that see doctors with the specialty having psyc/ment
 And finally patient age is an indicator which could be looked into further by separating ages even further and targeting different ages.
 
 ## Next Steps
-Along with my conclusions about the features that best indicate churn I think getting more data and testing the model on that data would help us better understand the effectiveness of the model. Specifically knowing weather and patient churned because they had completed their treatment or did they truly churn.
+Along with my conclusions about the features that best indicate churn I think getting more data and testing the model on that data would help us better understand the effectiveness of the model. Specifically knowing whether and patient churned because they had completed their treatment or did they truly churn.
 
 Communicating with people who have gathered this data and getting more insights about patients would lead to better feature understanding and modeling.
